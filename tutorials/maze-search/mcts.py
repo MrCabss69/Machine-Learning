@@ -64,7 +64,7 @@ class MCTS:
                 exploration_term = 2 * Cp * math.sqrt((2 * math.log(self.visits[node]) / self.visits[move]))
                 score = avg_reward + exploration_term
             else:
-                score = abs(self.rewards[move]+10) 
+                score = float('inf')
             if score > best_score:
                 best_score = score
                 best_move = move
@@ -81,7 +81,7 @@ class MCTS:
             if self.visits[move] > 0:
                 value = self.rewards[move] / self.visits[move]
             else:
-                value = abs(self.rewards[move]+10) 
+                value = float('inf')
             if value > best_value:
                 best_value = value
                 best_action = move
