@@ -1,6 +1,29 @@
 # Creado por: [@MrCabs69]
 # Fecha de creación: Thu Mar 07 2024
 
+
+# Ignorar archivos de imagen
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Ignorar archivos HTML
+*.html
+
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos JSON
+*.json
+
+# Ignorar directorio /lib
+*/lib
+
+# Ignorar directorios de caché de Python
+__pycache__/
+*.pyc
+
 # CSVs
 *.csv
 

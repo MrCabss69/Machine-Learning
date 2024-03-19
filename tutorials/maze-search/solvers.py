@@ -43,7 +43,7 @@ class GraphSearchAlgorithm:
                     heapq.heappush(queue, (f, neighbor))
                     paths[neighbor] = current_node
 
-        if end is None:  # Si 'end' es None, reconstruimos los caminos a todos los nodos alcanzados
+        if end is None:
             for node in distances:
                 self.solution[node] = self._reconstruct_path(paths, node)
                 
